@@ -1,207 +1,401 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>nnnpc's Blog</title><meta name="author" content="nnnpc"><meta name="copyright" content="nnnpc"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="nnnpc&#39;s Blog">
 <meta property="og:url" content="https://tt_npc.gitee.io/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="nnnpc&#39;s Blog">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:image" content="https://tt_npc.gitee.io/img/2.jpg">
+<meta property="article:author" content="nnnpc">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tt_npc.gitee.io/img/2.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://tt_npc.gitee.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'nnnpc\'s Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-11-16 16:51:27'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://tt_npc.gitee.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/11/15/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-11-15T10:28:52.944Z" itemprop="datePublished">2022-11-15</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/11/15/hello-world/">Hello World</a>
-    </h1>
-  
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/2.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/1.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">nnnpc's Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">nnnpc's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/11/16/%E7%BE%8A%E5%9F%8E%E6%9D%AFmisc/" title="羊城杯misc"><img class="post_bg" src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="羊城杯misc"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/16/%E7%BE%8A%E5%9F%8E%E6%9D%AFmisc/" title="羊城杯misc">羊城杯misc</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-16T02:45:45.874Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MISC/">MISC</a></span></div><div class="content">迷失幻境下载附件，拿到一个vmdk文件
+打开取证大师进行取证
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+看到了有两个被删除的文件，给它导出
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+首先对图片没有啥发现，把另一个文件拖入winhex看看
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+发现是png文件，但是少了个文件头，89504E47补充文件头，.png补充后缀
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+发现是和vmdk文件中的其它png文件相同
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+stegsolve查看了一下发现不是盲水印，于是想着合并看看
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://tt_npc.gitee.io/2022/11/15/hello-world/" data-id="clai35qb00000rov78k3pgvwi" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+发现了一个key，还剩一张图片，图片带key，试试outguess
+outguess -k “可莉前来报道” -r 1.jpg hidden.txt
 
+得到hidden.txt，打开得flag
+DASCTF{f473a6fd2de17a0c5794414b3905ebbe}
+where_is_secret下载附件，是一个加密压缩包和vig.txt
+打开vig.txt看看
 
+发现是维吉尼亚密码，那就在线网站解码
+https://www.guballa.de/vigenere-solver
 
-  
+发现了压缩包的密码GWHT@R1nd0yyds，打开压缩包
 
+发现是一张bmp图片，应该是隐藏了一些信息再图片中，编写脚本
+123456from PIL ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/11/16/%E5%AE%81%E6%B3%A2%E5%B8%82%E8%B5%9Bwp/" title="宁波市赛wp"><img class="post_bg" src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="宁波市赛wp"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/16/%E5%AE%81%E6%B3%A2%E5%B8%82%E8%B5%9Bwp/" title="宁波市赛wp">宁波市赛wp</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-16T02:45:45.870Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MISC/">MISC</a></span></div><div class="content">WEB
+Web1 writeup
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+发现include（）和file_get_contents()这两明示，想到使用php伪协议，data和filter，获得一串base64编码（从等号判断出）解码获得flag；
+Web2 writeup
+题目
 
-  
-    
+利用include（）函数读取flag.php&#x3D;&#x3D;&gt;伪协议读取
+但是在第一个if中对flag进行了排查，所以利用
+Payload：?from&#x3D;php:&#x2F;&#x2F;filter&#x2F;read&#x3D;convert.base64-encode&#x2F;resource&#x3D;behind.php
+进行绕过；
+获得一串base64编码，进行解码获得：
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li></ul>
-    </div>
-  </div>
+这样我们就可以利用下面的php序列化进行读取flag处理；
+解析一下这段代码：
+我们最终需要的是file_get_contents()函数，所以要调用__toString（）方法即转换为字符串，而在test类中在print函数输出需要一段字符串，所以会被调用，在看test类__call()方法当调用不存在的函数时调用，题目中确实调用了不 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/11/16/%E8%93%9D%E5%B8%BD%E6%9D%AF/" title="蓝帽杯"><img class="post_bg" src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="蓝帽杯"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/16/%E8%93%9D%E5%B8%BD%E6%9D%AF/" title="蓝帽杯">蓝帽杯</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-16T02:45:45.866Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MISC/">MISC</a></span></div><div class="content">domainhacker下载附件，发现是流量分析题，用wireshark打开
 
+在这里找到了rar文件，导出后发现需要密码，于是继续探索
+在tcp追踪流13发现了有用信息
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/11/15/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+阅读拼接进行base64解密试试
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
+发现了密码，解压压缩包
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+发现是mimikatz工具的界面，于是在NTLM这里找到了hash值
+
+手机取证1用盘古石阅读器打开，搜索题目给出的图片的名字
+
+导出该图片，并查看该图片属性的详细信息，得到分辨率360x360
+
+手机取证2题目要求是说让我们找到姜总的快递单号，那么试着搜索下关键字姜总
+
+果然，在群组聊天中找到了快递单号
+计算机取证_1读题发现是内存取证，想到使用工具volatility，第一个要求我们获得taqi7的开机密码，于是用volatility跑跑看，语句：.&#x2F;volatility_2.6_win64_standalone.exe -f 1.dmp –profile&#x3D;Win7SP1x64 hashdump
+
+找到了，发现是md5加密过的，md5解密
+得到开机密码anxinqi
+计算机取证_2看下题目，要求我们查看进程号，volatility ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/11/16/%E5%90%84%E7%A7%8D%E5%8E%8B%E7%BC%A9%E5%8C%85%E7%9A%84%E5%8A%A0%E5%AF%86/" title="各种压缩包的加密"><img class="post_bg" src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="各种压缩包的加密"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/16/%E5%90%84%E7%A7%8D%E5%8E%8B%E7%BC%A9%E5%8C%85%E7%9A%84%E5%8A%A0%E5%AF%86/" title="各种压缩包的加密">各种压缩包的加密</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-16T02:45:45.863Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MISC/">MISC</a></span></div><div class="content">拿到附件，查看了下四个加密压缩包，貌似分别代表了不同的加密方式
+第一个a.zip
+看了下有三个文件，1.txt，2.txt
+按照套路应该是CRC32爆破没错了，试试看
+
+看到了两串很明显的字符，pass_和_word
+所以压缩包密码应该就是_pass__word_，成功打开压缩包，得到1&#x2F;4张二维码，继续
+第二个f.zip根据压缩包的提示应该是可以直接爆破，先试试最常规的纯数字
+
+五位数字爆破成功密码是61825
+第三个g.zip
+根据文件名可以知道是明文爆破，这里由于会有一些压缩器的问题，所以就不分离出再进行压缩了，直接准备两个文件进行文件的删除
+删除到如下两幅图所示，相当于加密的和不加密的分离开
 
 
-<script src="/js/jquery-3.4.1.min.js"></script>
+进行明文爆破，成功
+
+第四个压缩包l.zip打开就一个文件，可能会是伪加密，试试修改下16进制数据
+
+能够解压
+这样四张分开的二维码图片就齐了，用PowerPoint拼起来看看，进行扫描
+
+得到flag，flag{d62427d8f843c98dcfa89f0ba0d1e6fe}
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/11/16/NSSCTF%20MISC%E9%83%A8%E5%88%86/" title="NSSCTF MISC部分"><img class="post_bg" src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="NSSCTF MISC部分"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/16/NSSCTF%20MISC%E9%83%A8%E5%88%86/" title="NSSCTF MISC部分">NSSCTF MISC部分</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-16T02:45:45.854Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MISC/">MISC</a></span></div><div class="content">[Week1]简单编码下载附件，是一张图片，拖入winhex查看下
+
+在文件末尾发现了url
+url decode-&gt;两次base64解码-&gt;2进制转换
+
+得到flag
+nssctf{nssctf_huanyingni}
+[Week1]三生三世下载附件，发现是个加密压缩包，没有别的东西，也不是伪加密
+那就进行爆破
+
+得到密码：xilan
+解压出1.txt
+
+发现是图片的base64码，在线网站解码
+https://the-x.cn/base64
+
+得到一张二维码，扫描一下
+得到：nc{lmTnc}stWceostsfeo__sf，看字符差不多齐全了，应该是栅栏密码
+http://moersima.00cha.net/shanlan.asp
+
+该网站在9栏的时候得到flag
+nssctf{Welcome_To_nssctf}
+[Week1]silly_zip得到加密压缩包，发现是个伪加密
+
+将这里的01改为00成功解压出图片
+
+明显能看到高度应该有问题，于是010进行修改
+值为113时能看到上方显示出flag
+
+NSSCTF{bmp_3ndian}
+[Week1]piz.ga ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/11/16/NewStarCTF%20WEEK4_%E9%83%A8%E5%88%86MISC/" title="NewStarCTF WEEK4_部分MISC"><img class="post_bg" src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="NewStarCTF WEEK4_部分MISC"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/16/NewStarCTF%20WEEK4_%E9%83%A8%E5%88%86MISC/" title="NewStarCTF WEEK4_部分MISC">NewStarCTF WEEK4_部分MISC</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-16T02:45:45.851Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MISC/">MISC</a></span></div><div class="content">奇怪的PDF下载附件
+
+发现pdf文件已经损坏，无法打开，拖入winhex看看
+
+发现是缺少文件头的pdf文件
+
+补上文件头保存后得到正常的pdf文件，找了一下里面发现没有什么奇怪的地方，想起来wbs的隐写，winhex搜索20
+
+这是此类隐写的一个特征，就更加确定是wbs了，用该工具进行解密
 
 
+无密码，只有这两步需要选择文件，其它步骤continue即可
+得到最终的flag
+flag{PDF_1s_n0t_strang3}
+Yesec no drumsticks 4下载附件，是一张黄色的图片
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+拖入winhex看看，发现是一张很常规的png图片，既然和颜色有关，那很可能是lsb隐写
+放入stegsolve看看，发现blue通道有东西
+
+把文本导出到txt中，能找到最终的flag
+
+flag{Yesec_deCid3s_t0_ch4nge_7he_fate_of_the_world_against_the_odds}
+qsdz’s girlfriend 4下载附件，看到有一张奇怪的编码图片
+
+猜想应该是哪个动漫或者游戏中的编码，另一张图片给出的便是其中的人物，于是上网搜了一下，发现是 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/11/16/NewStarCTF%20WEEK3_MISC/" title="NewStarCTF WEEK3_MISC"><img class="post_bg" src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="NewStarCTF WEEK3_MISC"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/16/NewStarCTF%20WEEK3_MISC/" title="NewStarCTF WEEK3_MISC">NewStarCTF WEEK3_MISC</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-16T02:45:45.847Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MISC/">MISC</a></span></div><div class="content">Whats HTTP下载附件，是个流量包
+
+查看了下协议分级，发现还是tcp占比大，http字节百分比占比高，flag大概就在http对象中
+导出http对象看看
+
+发现了诸多的可疑文件名，但是因为文件太多，于是先去看看tcp追踪流
+在追踪流30的时候发现了可疑的加密字符串
+
+NjY2YzYxNjc3YjM0NjYzMzMzMzYzNDM5NjQzMDMzMzA2MzM2MzczNzM4MzQzMjM2MzkzNzMxNjIzNTM0NjQ2NDM3MzI2NTYzNjU3ZA&#x3D;&#x3D;
+base64解密，再进行16进制转换得到flag
+做出来以后想着去找找在哪个文件当中
+
+看到了sssssecret这个文件，于是导出看看
+
+找到了同样的加密字符串，最终flag为
+flag{4f33649d030c6778426971b54dd72ece}
+qsdz’s girlfriend 3题目给了用户名和密码，尝试连接
+
+根据提示，看到有个叫做flag的文件，cat查看下有什么
+
+证明我们的权限还不太够，用命令查看下系统有哪些有SUID的可执行文件
+find &#x2F; -per ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/11/16/DASCTF%E5%8D%81%E6%9C%88%E6%8C%91%E6%88%98%E8%B5%9B/" title="DASCTF十月挑战赛"><img class="post_bg" src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DASCTF十月挑战赛"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/16/DASCTF%E5%8D%81%E6%9C%88%E6%8C%91%E6%88%98%E8%B5%9B/" title="DASCTF十月挑战赛">DASCTF十月挑战赛</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-16T02:45:45.844Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MISC/">MISC</a></span></div><div class="content">滴滴图下载附件，是一个加密压缩包和一张图片
+
+把图片拖入winhex看看
+
+发现有一段unicode编码和一个压缩包，把压缩包分离出来，同时看看unicode编码
+同时能发现这其实是一个png，先把后缀修改回来
+unicode解出：this_is_paSS，发现这并不是刚开始压缩包的密码，所以应该是分离出来的压缩包的密码
+解压出来一张图片，CRC爆破发现宽高不对，修改宽高
+
+得到压缩包密码this_is_not_PASSWORD
+解压出音频，拖入au看看
+
+发现是双重摩斯，将上下都转换成摩斯编码，能发现一个是
+to_be_ctfer，根据题目提示能知道另一个是没有用的，因此就得到了最后的flag
+DASCTF{to_be_ctfer}
+poi？qoi！下载附件，是一个无后缀文件，拖入winhex也没啥发现，上网搜了一下，发现这个可以转成png
+https://www.aconvert.com/image/qoi-to-png/
+发现是一张二维码，而这个二维码扫描出来是个网址，存放着另一张二维码
+
+扫描下得到了一个假flag
+但是在stegsolve中的gray通道发现了另一张二维码
+
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/11/16/DASCTF2022_07%E8%B5%8B%E8%83%BD%E8%B5%9B/" title="DASCTF2022_07赋能赛"><img class="post_bg" src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DASCTF2022_07赋能赛"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/16/DASCTF2022_07%E8%B5%8B%E8%83%BD%E8%B5%9B/" title="DASCTF2022_07赋能赛">DASCTF2022_07赋能赛</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-16T02:45:45.839Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MISC/">MISC</a></span></div><div class="content">MISCez_forenisc下载附件
+得到pc.raw和pc.wmdk，，放入取证大师中发现是个bitlocker加密的磁盘
+立马转移注意到pc.raw上，是个内存镜像。直接用EFDD梭出恢复密钥
+060841-363737-551397-247489-310134-034430-598312-215853
+用取证大师进行解密
+
+发现有个压缩包，导出，发现是张png图片，用stegsolve发现了rgb的0通道藏了压缩包
+
+保存下来，发现压缩包损坏，直接使用winrar自带的修复功能修复，发现是个加密压缩包
+看到了压缩包还有提示
+
+看来要找账户密码，用passwarekit也能梭出来
+
+550f37c7748e
+解压得到八进制的数
 
 
+转为16进制是得到key是358daebef0b7d，貌似是什么的一个密钥，继续看看pc.raw
+用volatility分析一下，发现screenshot的截图有信息
 
+提示了thes3cret，filescan查找该关键字
 
-<script src="/js/script.js"></script>
+发现了个文件，给它dump下来
 
+记事本打开发现密文
 
+接下来就是进行aes解密了
 
+DASCTF{2df05d6846ea7 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/11/16/DASCTF%20%E4%B9%9D%E6%9C%88%E6%8C%91%E6%88%98%E8%B5%9B/" title="DASCTF 九月挑战赛"><img class="post_bg" src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DASCTF 九月挑战赛"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/16/DASCTF%20%E4%B9%9D%E6%9C%88%E6%8C%91%E6%88%98%E8%B5%9B/" title="DASCTF 九月挑战赛">DASCTF 九月挑战赛</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-16T02:45:45.836Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MISC/">MISC</a></span></div><div class="content">Misc一. easy_keyboard下载附件，一个加密压缩包，一个secret.Q
+查询可知secret.Q是按键精灵的一个脚本文件，我把它放到了win10的虚拟机中运行
 
+关掉输入法，按键精灵运行后f10记事本运行
 
-  </div>
-</body>
-</html>
+试了一遍发现都不是压缩包的密码，回看脚本，发现有好多的backspace，删了重新跑一遍
+
+下面的三组数据就是文本中所展示的密钥
+6e187bef 323d1a4b f067ec94
+这里涉及到一个知识点是bkcrack爆破
+bkcrack -C keyboard.zip -c keyboard.pcapng -k 6e187bef 323d1a4b f067ec94 -d a.pcapng
+kali中运行（关于bkcrack的下载安装和使用在另一篇文章中有写）
+
+发现流量包打不开，这里需要用到Inflate那个脚本，但是也有网站可以使用
+https://ctf.mzy0.com/CyberChef3/
+
+把文件导入处理后导出为1.pcapng
+
+成功打开，原以为只要用键盘流量的脚本一把梭就能出，但是发现什么都没有
+只能tshark先提取提取数据
+tshark -r ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/2.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">nnnpc</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/11/16/%E7%BE%8A%E5%9F%8E%E6%9D%AFmisc/" title="羊城杯misc"><img src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="羊城杯misc"/></a><div class="content"><a class="title" href="/2022/11/16/%E7%BE%8A%E5%9F%8E%E6%9D%AFmisc/" title="羊城杯misc">羊城杯misc</a><time datetime="2022-11-16T02:45:45.874Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/16/%E5%AE%81%E6%B3%A2%E5%B8%82%E8%B5%9Bwp/" title="宁波市赛wp"><img src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="宁波市赛wp"/></a><div class="content"><a class="title" href="/2022/11/16/%E5%AE%81%E6%B3%A2%E5%B8%82%E8%B5%9Bwp/" title="宁波市赛wp">宁波市赛wp</a><time datetime="2022-11-16T02:45:45.870Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/16/%E8%93%9D%E5%B8%BD%E6%9D%AF/" title="蓝帽杯"><img src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="蓝帽杯"/></a><div class="content"><a class="title" href="/2022/11/16/%E8%93%9D%E5%B8%BD%E6%9D%AF/" title="蓝帽杯">蓝帽杯</a><time datetime="2022-11-16T02:45:45.866Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/16/%E5%90%84%E7%A7%8D%E5%8E%8B%E7%BC%A9%E5%8C%85%E7%9A%84%E5%8A%A0%E5%AF%86/" title="各种压缩包的加密"><img src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="各种压缩包的加密"/></a><div class="content"><a class="title" href="/2022/11/16/%E5%90%84%E7%A7%8D%E5%8E%8B%E7%BC%A9%E5%8C%85%E7%9A%84%E5%8A%A0%E5%AF%86/" title="各种压缩包的加密">各种压缩包的加密</a><time datetime="2022-11-16T02:45:45.863Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/16/NSSCTF%20MISC%E9%83%A8%E5%88%86/" title="NSSCTF MISC部分"><img src="/img/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="NSSCTF MISC部分"/></a><div class="content"><a class="title" href="/2022/11/16/NSSCTF%20MISC%E9%83%A8%E5%88%86/" title="NSSCTF MISC部分">NSSCTF MISC部分</a><time datetime="2022-11-16T02:45:45.854Z" title="Created 2022-11-16 10:45:45">2022-11-16</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/MISC/"><span class="card-category-list-name">MISC</span><span class="card-category-list-count">15</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/WEB/"><span class="card-category-list-name">WEB</span><span class="card-category-list-count">5</span></a></li>
+            </ul></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">November 2022</span><span class="card-archive-list-count">20</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">20</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-11-16T08:51:23.816Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(20deg, #0062be, #925696, #ccc426e, #fb0347)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By nnnpc</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    window.typed = new Typed("#subtitle", {
+      strings: ["日日清，周周清，月月清","低头学习，抬头看路"],
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '日日清，周周清，月月清'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script></div><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="Hello,Hacker,CTFer" data-fontsize="15px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
