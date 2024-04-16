@@ -811,6 +811,7 @@ SYN 包，询问服务端是否能与其建立练接。服务端同意后回了&
 &lt;p&gt;（用于对速度要求高，但是对少量丢包没有太大要求的场景）&lt;/p&gt;
 </content>
         <category term="其它" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/" />
+        <category term="w10" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/course-4/" />
         <category term="其它" scheme="https://nnnpc.github.io/tags/%E5%85%B6%E5%AE%83/" />
         <updated>2024-04-16T05:58:19.049Z</updated>
     </entry>
