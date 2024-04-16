@@ -387,6 +387,7 @@ flag.php 之后的具体内容&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/ATJitJGKzlDQFCbK.png!thumbnail&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </content>
         <category term="流量" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/" />
+        <category term="流量分析" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/course-2/" />
         <category term="流量" scheme="https://nnnpc.github.io/tags/%E6%B5%81%E9%87%8F/" />
         <updated>2024-04-16T05:58:19.061Z</updated>
     </entry>
@@ -472,7 +473,9 @@ b63a8f7f7e4797a753840481428f0f18::unknown11(std::vector &lt;code&gt;&amp;lt;unsi
 &lt;p&gt;注册后做题就行了&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/1706620684161-7a964022-5591-410c-8080-c58a91dfc5f7.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </content>
+        <category term="Misc" scheme="https://nnnpc.github.io/categories/Misc/" />
         <category term="MISC" scheme="https://nnnpc.github.io/categories/MISC/" />
+        <category term="比赛wp" scheme="https://nnnpc.github.io/categories/Misc/course-1/" />
         <category term="MISC" scheme="https://nnnpc.github.io/tags/MISC/" />
         <updated>2024-04-16T05:58:19.059Z</updated>
     </entry>
@@ -596,6 +599,7 @@ version&#39; 字符串时，表明存在未授权访问漏洞，否则不存在&
 &lt;p&gt;4. 阻止其他用户添加新的公钥，将 authorized_keys 的权限设置为对拥有者只读&lt;/p&gt;
 </content>
         <category term="其它" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/" />
+        <category term="杂记" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/course-4/" />
         <category term="其它" scheme="https://nnnpc.github.io/tags/%E5%85%B6%E5%AE%83/" />
         <updated>2024-04-16T05:58:19.057Z</updated>
     </entry>
@@ -682,6 +686,7 @@ Band，OOB）通道来读取数据，思路如下：&lt;/p&gt;
 &lt;p&gt;2. 对用户提交的 XML 数据进行过滤，如关键词 &amp;lt;!DOCTYPE 和 &amp;lt;!ENTITY 或者 SYSTEM 和 PUBLIC 等&lt;/p&gt;
 </content>
         <category term="其它" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/" />
+        <category term="杂记" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/course-4/" />
         <category term="其它" scheme="https://nnnpc.github.io/tags/%E5%85%B6%E5%AE%83/" />
         <updated>2024-04-16T05:58:19.054Z</updated>
     </entry>
@@ -720,6 +725,7 @@ addr 查看&lt;/p&gt;
 &lt;p&gt;点击应用即可，再在浏览器右上角将代理切换至刚才配置好的自己设置的名称，就会发现自己的 ip 已经切换至目标机子的服务器，就能够正常访问内网了&lt;/p&gt;
 </content>
         <category term="其它" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/" />
+        <category term="杂记" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/course-4/" />
         <category term="其它" scheme="https://nnnpc.github.io/tags/%E5%85%B6%E5%AE%83/" />
         <updated>2024-04-16T05:58:19.053Z</updated>
     </entry>
@@ -882,7 +888,9 @@ SYN 包，询问服务端是否能与其建立练接。服务端同意后回了&
 &lt;p&gt;凯撒枚举偏移得到 flag&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;flag{39e0fb49229bea5f33b02403df953012}&lt;/strong&gt;&lt;/p&gt;
 </content>
+        <category term="Misc" scheme="https://nnnpc.github.io/categories/Misc/" />
         <category term="MISC" scheme="https://nnnpc.github.io/categories/MISC/" />
+        <category term="比赛wp" scheme="https://nnnpc.github.io/categories/Misc/course-1/" />
         <category term="MISC" scheme="https://nnnpc.github.io/tags/MISC/" />
         <updated>2024-04-16T05:58:19.047Z</updated>
     </entry>
@@ -964,6 +972,7 @@ SYN 包，询问服务端是否能与其建立练接。服务端同意后回了&
 &lt;p&gt;对比了 PHP_EVAL_XOR_BASE64 和 PHP_XOR_BASE64 之后能够发现，PHP_EVAL_XOR_BASE64 下的请求体与响应体基本是一个流对应一条命令，而 PHP_XOR_BASE64 可以是多条命令的请求体与响应体存在同一个流之中&lt;/p&gt;
 </content>
         <category term="流量" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/" />
+        <category term="流量分析" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/course-2/" />
         <category term="流量" scheme="https://nnnpc.github.io/tags/%E6%B5%81%E9%87%8F/" />
         <updated>2024-04-16T05:58:19.045Z</updated>
     </entry>
@@ -1066,6 +1075,7 @@ SYN 包，询问服务端是否能与其建立练接。服务端同意后回了&
 &lt;/blockquote&gt;
 </content>
         <category term="流量" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/" />
+        <category term="流量分析" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/course-2/" />
         <category term="流量" scheme="https://nnnpc.github.io/tags/%E6%B5%81%E9%87%8F/" />
         <updated>2024-04-16T05:58:19.043Z</updated>
     </entry>
@@ -1291,6 +1301,7 @@ Data 中带有四字节的数据，猜测为鼠标流量，用 tshark 提取 HID
 &lt;img data-src=&#34;https://nnnpc-1311441040.cos.ap-shanghai.myqcloud.com/9fWB6zzlzqpbQMUS.png!thumbnail&#34; alt=&#34;&#34; title=&#34;fig:&#34; /&gt;&lt;/p&gt;
 </content>
         <category term="流量" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/" />
+        <category term="流量分析" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/course-2/" />
         <category term="流量" scheme="https://nnnpc.github.io/tags/%E6%B5%81%E9%87%8F/" />
         <updated>2024-04-16T05:58:19.038Z</updated>
     </entry>

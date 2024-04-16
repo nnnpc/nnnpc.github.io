@@ -329,6 +329,7 @@ Nmap 模块实现的大体上的流程与使用 Scapy 差不多，相当于是�
             <title>蚁剑流量浅析</title>
             <link>https://nnnpc.github.io/2024/04/16/%E8%9A%81%E5%89%91%E6%B5%81%E9%87%8F%E6%B5%85%E6%9E%90/</link>
             <category term="流量" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/" />
+            <category term="流量分析" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/course-2/" />
             <category term="流量" scheme="https://nnnpc.github.io/tags/%E6%B5%81%E9%87%8F/" />
             <pubDate>Tue, 16 Apr 2024 13:58:19 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;最近回顾了一道蚁剑的流量分析题目，就像借着这个机会记录一下学习内容&lt;/p&gt;
@@ -397,7 +398,9 @@ flag.php 之后的具体内容&lt;/p&gt;
             <guid isPermalink="true">https://nnnpc.github.io/2024/04/16/%E8%A5%BF%E6%B9%96%E8%AE%BA%E5%89%91C0deX%E6%88%98%E9%98%9FWP/</guid>
             <title>西湖论剑C0deX战队WP</title>
             <link>https://nnnpc.github.io/2024/04/16/%E8%A5%BF%E6%B9%96%E8%AE%BA%E5%89%91C0deX%E6%88%98%E9%98%9FWP/</link>
+            <category term="Misc" scheme="https://nnnpc.github.io/categories/Misc/" />
             <category term="MISC" scheme="https://nnnpc.github.io/categories/MISC/" />
+            <category term="比赛wp" scheme="https://nnnpc.github.io/categories/Misc/course-1/" />
             <category term="MISC" scheme="https://nnnpc.github.io/tags/MISC/" />
             <pubDate>Tue, 16 Apr 2024 13:58:19 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;西湖论剑c0dex战队wp&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#西湖论剑c0dex战队wp&#34;&gt;#&lt;/a&gt; 西湖论剑 C0deX 战队 WP&lt;/h1&gt;
@@ -484,6 +487,7 @@ b63a8f7f7e4797a753840481428f0f18::unknown11(std::vector &lt;code&gt;&amp;lt;unsi
             <title>未授权访问漏洞</title>
             <link>https://nnnpc.github.io/2024/04/16/%E6%9C%AA%E6%8E%88%E6%9D%83%E8%AE%BF%E9%97%AE%E6%BC%8F%E6%B4%9E/</link>
             <category term="其它" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/" />
+            <category term="杂记" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/course-4/" />
             <category term="其它" scheme="https://nnnpc.github.io/tags/%E5%85%B6%E5%AE%83/" />
             <pubDate>Tue, 16 Apr 2024 13:58:19 +0800</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
@@ -607,6 +611,7 @@ version&#39; 字符串时，表明存在未授权访问漏洞，否则不存在&
             <title>外部实体注入漏洞</title>
             <link>https://nnnpc.github.io/2024/04/16/%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E/</link>
             <category term="其它" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/" />
+            <category term="杂记" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/course-4/" />
             <category term="其它" scheme="https://nnnpc.github.io/tags/%E5%85%B6%E5%AE%83/" />
             <pubDate>Tue, 16 Apr 2024 13:58:19 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;当允许引用外部实体时，会造成外部实体注入（XXE）漏洞。通过构造恶意内容，就可能导致任意文件读取、系统命令执行、内网端口探测、攻击内网网站等危害&lt;/p&gt;
@@ -693,6 +698,7 @@ Band，OOB）通道来读取数据，思路如下：&lt;/p&gt;
             <title>浅析内网代理的搭建</title>
             <link>https://nnnpc.github.io/2024/04/16/%E6%B5%85%E6%9E%90%E5%86%85%E7%BD%91%E4%BB%A3%E7%90%86%E7%9A%84%E6%90%AD%E5%BB%BA/</link>
             <category term="其它" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/" />
+            <category term="杂记" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/course-4/" />
             <category term="其它" scheme="https://nnnpc.github.io/tags/%E5%85%B6%E5%AE%83/" />
             <pubDate>Tue, 16 Apr 2024 13:58:19 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;工具：Neo-reGeorg&lt;/p&gt;
@@ -822,7 +828,9 @@ SYN 包，询问服务端是否能与其建立练接。服务端同意后回了&
             <guid isPermalink="true">https://nnnpc.github.io/2024/04/16/%E5%8F%A4%E5%89%91%E5%B1%B1%20Misc/</guid>
             <title>古剑山 Misc</title>
             <link>https://nnnpc.github.io/2024/04/16/%E5%8F%A4%E5%89%91%E5%B1%B1%20Misc/</link>
+            <category term="Misc" scheme="https://nnnpc.github.io/categories/Misc/" />
             <category term="MISC" scheme="https://nnnpc.github.io/categories/MISC/" />
+            <category term="比赛wp" scheme="https://nnnpc.github.io/categories/Misc/course-1/" />
             <category term="MISC" scheme="https://nnnpc.github.io/tags/MISC/" />
             <pubDate>Tue, 16 Apr 2024 13:58:19 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;misc&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#misc&#34;&gt;#&lt;/a&gt; Misc&lt;/h2&gt;
@@ -894,6 +902,7 @@ SYN 包，询问服务端是否能与其建立练接。服务端同意后回了&
             <title>哥斯拉v4.01流量浅析</title>
             <link>https://nnnpc.github.io/2024/04/16/%E5%93%A5%E6%96%AF%E6%8B%89v4.01%E6%B5%81%E9%87%8F%E6%B5%85%E6%9E%90/</link>
             <category term="流量" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/" />
+            <category term="流量分析" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/course-2/" />
             <category term="流量" scheme="https://nnnpc.github.io/tags/%E6%B5%81%E9%87%8F/" />
             <pubDate>Tue, 16 Apr 2024 13:58:19 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;前段时间稍微看了下哥斯拉的一些流量相关的知识点，今天就来稍微记录一下&lt;/p&gt;
@@ -975,6 +984,7 @@ SYN 包，询问服务端是否能与其建立练接。服务端同意后回了&
             <title>冰蝎v3.0流量浅析</title>
             <link>https://nnnpc.github.io/2024/04/16/%E5%86%B0%E8%9D%8Ev3.0%E6%B5%81%E9%87%8F%E6%B5%85%E6%9E%90/</link>
             <category term="流量" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/" />
+            <category term="流量分析" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/course-2/" />
             <category term="流量" scheme="https://nnnpc.github.io/tags/%E6%B5%81%E9%87%8F/" />
             <pubDate>Tue, 16 Apr 2024 13:58:19 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;近期稍微对冰蝎的流量进行了一些分析，因此来记录一下&lt;/p&gt;
@@ -1248,6 +1258,7 @@ IM 麦克斯.txt 文件&lt;/p&gt;
             <title>USB</title>
             <link>https://nnnpc.github.io/2024/04/16/USB/</link>
             <category term="流量" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/" />
+            <category term="流量分析" scheme="https://nnnpc.github.io/categories/%E6%B5%81%E9%87%8F/course-2/" />
             <category term="流量" scheme="https://nnnpc.github.io/tags/%E6%B5%81%E9%87%8F/" />
             <pubDate>Tue, 16 Apr 2024 13:58:19 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;最近做到之前经典的流量题有点多，usb 就是其中之一，这里记录一下&lt;/p&gt;
