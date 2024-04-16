@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>nnnpc&#39;s Blog</title>
-        <subtitle>==低头学习，抬头看路==</subtitle>
+        <title>低头学习  抬头看路</title>
+        <subtitle>很多人已经做到了，而他们都曾经和现在的你站在同样的起点上</subtitle>
         <icon>https://nnnpc.github.io/images/favicon.ico</icon>
         <link>https://nnnpc.github.io</link>
         <author>
@@ -773,7 +773,7 @@ pyinstaller，当然如果还是报错的话可以下载 whl 文件，如图&lt;
             <title>关于TCP与UDP协议的学习</title>
             <link>https://nnnpc.github.io/2024/04/16/%E5%85%B3%E4%BA%8ETCP%E4%B8%8EUDP%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
             <category term="其它" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/" />
-            <category term="w10" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/course-4/" />
+            <category term="w10" scheme="https://nnnpc.github.io/categories/%E5%85%B6%E5%AE%83/w10/" />
             <category term="其它" scheme="https://nnnpc.github.io/tags/%E5%85%B6%E5%AE%83/" />
             <pubDate>Tue, 16 Apr 2024 13:58:19 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;TCP 协议的三次握手，传输确认，四次挥手&lt;/p&gt;
